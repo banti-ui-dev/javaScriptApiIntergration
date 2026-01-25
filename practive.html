@@ -24,17 +24,14 @@
 <script>
     var arr = [1, 2, 2, 9, 4, 7, 4, 5, 5];
     // Output: [1, 2, 9, 4, 7, 5]
-    function uniqArray(arr){
-        let uniqarr = [];
-        for(let i of arr){
-            if(!uniqarr.includes(i)){
-                uniqarr.push(i);
-            }        
-        }
-        return uniqarr
-    }
     
-    console.log(uniqArray(arr))
+    let uniqarr = [];
+    for(let i of arr){
+        if(!uniqarr.includes(i)){
+            uniqarr.push(i);
+        }
+    }
+    console.log(uniqarr)
 </script>
 
 

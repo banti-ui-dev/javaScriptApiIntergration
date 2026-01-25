@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>test page </h1>
+</body>
+<!-- <script>
+// Output : arr[] = {1, 2, 3, 4, 5} without using set method
+const arr = [1, 2, 2, 3, 4, 4, 4, 5, 5];
+const unique = [];
+for(let n of arr){
+    console.log('here the N details:',n )
+    if (!unique.includes(n)){
+        unique.push(n)
+    }
+}
+console.log(unique);
+</script>
+<script>
+    const num = [7,1,5,6,8,2,2,2,5,4,5,6]
+    const uniqueVal = [];
+    for(let a of num){
+        console.log('Unique Number',a)
+        if(!uniqueVal.includes(a)){
+            uniqueVal.push(a)
+        }
+    }
+    console.log('Final uniquee vakues', ([...uniqueVal].sort((a,b) => a-b)))
+</script> -->
+<!-- <script>
+    //just print the highest value of array
+    const number = [20,4,33,7,8,9]
+    let max = [];
+    for(let b of number){
+        // console.log(b)
+        if(b > max){
+            max = b;
+        }
+    }
+    console.log(max)
+    //print 2nd highest value of array
+    let second = [];
+    for(let b of number){
+        if(b > max){
+            second = max;
+            max = b;
+        } else if(b>second && b!=max){
+            second=b;
+        }
+    }
+    console.log(second)
+</script> -->
+<!-- <script>
+    //find the max numner bogest number
+    const arr = [2,120,150,46,8,190]    
+    let bigestnum = -Infinity;
+    for(let a of arr){
+        if(a > bigestnum){
+            console.log(a)
+            bigestnum = a;
+        }
+    }
+    console.log(bigestnum)
+</script> -->
+<!-- <script>
+    const arr = [1, 2, 2, 9, 4, 7, 4, 5, 5]
+    let uniq = [];
+    let bigestnum = [];
+    secondMax = [];
+    for(let n of arr){
+        //for remove repeterd number
+        if (!uniq.includes(n)){
+            uniq.push(n)
+        }
+        //to find biggest value
+        if(n>bigestnum){
+            bigestnum = n;
+        }
+    }
+    //sort the array
+    console.log('The array',arr)
+    arr.sort((a,b)=> a-b)
+    console.log('The sorted array',arr)
+    //for remove repeterd number
+    console.log('Removed repeted value',uniq)
+    //find bigest vallue
+    console.log('The biggest Number', bigestnum)    
+</script> -->
+<!-- <script>
+    const arr = [1, 2, 2, 9, 4, 7, 4, 5, 5]
+    //get the biggestnember of this arry
+    let biggestnum = [];
+    //remove the repeted number
+    let uniqnum = [];
+    for(let n of arr){
+        if(n>biggestnum){
+            biggestnum=n;
+        }
+        if(!uniqnum.includes(n)){
+            uniqnum.push(n)
+        }
+    }
+    console.log('Uniqnumber',uniqnum)
+    console.log(biggestnum)
+</script> -->
+<!-- <script>
+    //to print the numbers from 0 to 9 with delay of 1 second each
+    for(let i=0; i<10; i++){
+            setTimeout(()=>{
+                console.log(i);
+            }, 1000
+            );
+        }
+</script> -->
+<!-- <script>
+
+    const findUnique = (arr) =>{
+        let uniqNum = [];
+        for(let i of arr){
+            if(!uniqNum.includes(i)){
+                uniqNum.push(i)
+            }
+        }
+        return uniqNum
+    }
+    var arr = [1, 2, 2, 9, 4, 7, 4, 5, 5]
+    console.log(findUnique(arr))
+</script> -->
+<!-- <script>
+    const arr = [1,2,3];
+    arr.length = 0;
+    console.log(arr)
+
+</script>
+<script>
+    
+    console.log(a); //undefined
+    var a = 10;
+    function test(){
+        console.log(a); //undefined
+        var a = 20;
+        console.log(a); //20
+    }
+    test();
+    console.log(a); // 10 due to global scope a =10
+
+
+
+
+</script> -->
+<!-- <script>
+    var arr = [1, 2, 2, 9, 4, 7, 4, 5, 5]
+    function qniwueNum(arr){
+        let uniq = [];
+        
+        for(let i of arr){
+            if(!uniq.includes(i)){
+                uniq.push(i)
+            }           
+        } return uniq;
+        
+    }
+    function bigestLogic(arr){
+        let biggest = -Infinity;
+        for(let i of arr){
+            if(i>biggest){
+                biggest=i
+            }
+        }
+        return biggest
+    }
+    console.log(bigestLogic(arr))
+    console.log(qniwueNum(arr))
+</script> -->
+<script>
+    var arr = [1, 2, 2, 9, 4, 7, 4, 5, 5];
+    // Output: [1, 2, 9, 4, 7, 5]
+    function uniqNumbers(arrnum){
+        let uniqnum = [];
+        for(let i of arrnum){
+            console.log(i)
+            if(!uniqnum.includes(i)){
+                uniqnum.push(i);
+            }
+        }
+        return uniqnum
+    }
+    console.log(uniqNumbers(arr))
+    </script>
+
+
+
+
+
+
+</html>

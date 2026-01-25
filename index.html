@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Index page </h1>
+</body>
+<script>
+    const arr1 = [1,2,3,5,4];
+    const arr2 = [1,2,3,4,5];
+    //which arrays is sorted and which is not
+    function isSorted(arr) {
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] < arr[i - 1]) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    console.log("Array 1 is sorted:", isSorted(arr1));
+    console.log("Array 2 is sorted:", isSorted(arr2));
+</script>
+<script>
+    const str = "Hello World JS";
+    //reverse the string
+    function rString(s){
+        for(let i=s.length-1; i>=0; i--){
+            console.log(s[i]);
+        }
+        return s.split('').reverse().join('');
+    }
+    console.log("Reversed String:", rString(str));
+
+    // reverce each word like "Hello World JS" -> "JS World Hello"
+    function reverseWords(s){
+        return s.split(' ').reverse().join(' ');
+    }   
+    console.log("Reversed Words:", reverseWords(str));
+    
+
+</script>
+<script>
+    // Event loop - Microtasks vs Macrotasks
+    console.log("Start");
+    setTimeout(() => {
+        console.log("Macrotask: setTimeout");
+    }, 0);
+    Promise.resolve().then(() => {
+        console.log("Microtask: Promise");
+    });
+    console.log("End");
+    // java script runs synchronously first, so "Start" and "End" will be logged first.
+    // Then the microtask queue is processed, so "Microtask: Promise" will be logged next.
+    // Finally, the macrotask queue is processed, so "Macrotask: setTimeout" will be logged last.
+</script>
+<script>
+    const arr = [1, 7, 3, 7, 5, 8, 7];
+    // find max repeated number in array
+    function maxRepeated(arr) {
+        const countMap = {};
+        console.log(countMap);
+        let maxCount = 0;
+        let maxNum = null;
+
+        for (const num of arr) {
+            countMap[num] = (countMap[num] || 0) + 1;
+            if (countMap[num] > maxCount) {
+                maxCount = countMap[num];
+                maxNum = num;
+            }
+        }
+        return maxNum;
+    }
+    console.log("Max Repeated Number:", maxRepeated(arr));
+</script>
+<script>
+    var array1 = [ { name:"Alice", age:25, address: { city:"New York", country:"USA" } } ];    
+    var array2 = [...array1];
+    console.log(array2);
+    array2.name = "Bob";
+    array2.address.city = "Los Angeles";    
+    console.log(array1.name);
+    console.log(array2.name);
+    console.log(array1.address.city);
+    console.log(array2.address.city);
+</script>
+</html>

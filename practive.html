@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<!-- <script>
+    const str = "frontend";
+    let updatedStr = str.split('').reverse().join('');
+    //use for loop
+    let updatedStrnum = '';
+    for(let i=str.length-1; i>=0; i--){
+        //console.log(i);
+       updatedStrnum = updatedStrnum + str[i]; 
+       //updatedStrnum += str[i]; 
+    }
+    console.log(updatedStr)
+    console.log(updatedStrnum)
+</script> -->
+<script>
+    var arr = [1, 2, 2, 9, 4, 7, 4, 5, 5];
+    // Output: [1, 2, 9, 4, 7, 5]
+    function uniqArray(arr){
+        let uniqarr = [];
+        for(let i of arr){
+            if(!uniqarr.includes(i)){
+                uniqarr.push(i);
+            }        
+        }
+        return uniqarr
+    }
+    
+    console.log(uniqArray(arr))
+</script>
+
+
+</html>

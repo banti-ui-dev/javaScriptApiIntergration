@@ -16,9 +16,15 @@
     const arr = [1, 2, 2, 9, 4, 7, 4, 5, 5];
     document.getElementById('arr').innerHTML = arr;
     //using in built feature
-    const uniqueArr = [...new Set(arr)]
+    // const uniqueArr = [...new Set(arr)]
     //using for loop
-    
+    const uniqueArr = [];
+    for(let i of arr){
+        // console.log(arr)
+        if(!uniqueArr.includes(i)){
+            uniqueArr.push(i);
+        }
+    }
     console.log(uniqueArr);
     document.getElementById('output').innerHTML = uniqueArr;
 </script>

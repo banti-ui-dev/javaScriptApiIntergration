@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p><u>Remove repeted values from array</u></p>
+    <div>
+        <p>Question : [<span id="arr">{arr}</span>]</p>
+        <p>Out put : [<span id="output">{uniqueArr}</span>]</p>
+    </div>
+</body>
+<script>
+    const arr = [1, 2, 2, 9, 4, 7, 4, 5, 5];
+    document.getElementById('arr').innerHTML = arr;
+    //using in built feature
+    const uniqueArr = [...new Set(arr)]
+    //using for loop
+    
+    console.log(uniqueArr);
+    document.getElementById('output').innerHTML = uniqueArr;
+</script>
+</html>

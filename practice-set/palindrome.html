@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>    
+    function isPalindrome(str) {
+        str = str.toLowerCase();
+        let reversed = str.split('').reverse().join('');
+        return str === reversed
+        // "madam" → true
+        // "hello" → false
+    }
+    const str = "maDam";
+    console.log(isPalindrome(str));  
+</script>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+</body>
+<!-- <script>
+    const str = [
+        {name : "Banti" , age: 30},
+        {name : "sohan" , age: 25},
+        {name : "Ravi" , age: 35},
+        {name : "Sumit" , age: 26}
+    ]
+    const app = document.getElementById("app")
+    //using filter
+    const aboveage = str.filter(person => person.age>25)
+    function aboveage(str){
+
+    }
+
+    aboveage.map(item => {
+        const div = document.createElement('div')
+        div.innerHTML = `Name: ${item.name}` + `,`+ `Age:${item.age}`;
+        app.appendChild(div);
+    })
+</script> -->
+<script>
+    const str = [
+        {name : "Banti" , age: 30},
+        {name : "sohan" , age: 25},
+        {name : "Ravi" , age: 35},
+        {name : "Sumit" , age: 26}
+    ]
+    let customData = [];
+    for(let i=0; i< str.length; i++){
+        if(str[i].age > 25){
+            customData.push(str[i]);
+        }else{
+            
+        }
+    }
+    console.log(customData)
+    // let customData = str.filter(user => user.age>25)
+    customData.map(item => {console.log(`${item.name} : ${item.age}`)})
+    
+</script>
+</html>

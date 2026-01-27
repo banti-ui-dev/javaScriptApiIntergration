@@ -8,7 +8,7 @@
 <body>
     
 </body>
-<script>    
+<!-- <script>    
     const arr = ["a", "b", "a", "c", "b", "a"];
     // Output: { a: 3, b: 2, c: 1 }
     let count = {};
@@ -22,5 +22,23 @@
         }        
     }
     console.log(count);    
+</script> -->
+<script>
+const input = "Hello World";
+let result = "";
+let replaceWord = "Java";
+
+for (let i = 0; i < input.length; i++) {
+  if (i < replaceWord.length) {
+    result += replaceWord[i];
+  } else if (i >= 5) {
+    result += input[i];
+  }
+}
+
+console.log(result); // Java World
+
+
+
 </script>
 </html>

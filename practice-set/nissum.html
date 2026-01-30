@@ -11,30 +11,39 @@
 <script>
     //write a code to remove duplicate from a array
     const arr = [1,5,2,6,2,8,2,3,5,3,4]
-    let uniqarr = [];
-    
-    
-    //Using For loop
-    for(let i = 0; i<=arr.length-1; i++){
-        if(!uniqarr.includes(arr[i])){
-            uniqarr.push(arr[i])
+    const uniqVal = [];
+    for(let i of arr){
+        if(!uniqVal.includes(i)){
+            uniqVal.push(i)
         }
     }
+    console.log(uniqVal)
+    let ShortedVal = uniqVal.sort((a,b) => a-b)
+    console.log(ShortedVal);
     
     
-    //Using For of loop
-    // for(let i of arr){
-    //     if(!uniqarr.includes(i)){
-    //         uniqarr.push(i)
-    //     }          
+    
+    // //Using For loop
+    // for(let i = 0; i<=arr.length-1; i++){
+    //     if(!uniqarr.includes(arr[i])){
+    //         uniqarr.push(arr[i])
+    //     }
     // }
-    let sorteddata = uniqarr.sort((a,b)=>a-b);
-    console.log(sorteddata);    
+    
+    
+    // //Using For of loop
+    // // for(let i of arr){
+    // //     if(!uniqarr.includes(i)){
+    // //         uniqarr.push(i)
+    // //     }          
+    // // }
+    // let sorteddata = uniqarr.sort((a,b)=>a-b);
+    // console.log(sorteddata);    
 
 
-    const arrtoshort = [5,56,9,7,5,9,9,5,4,5,8,5,2,5,5,5]
-    //Use inbuilt method
-    const shortedarr = [...new Set(arrtoshort)].sort((a,b) => a-b)
-    console.log(shortedarr);
+    // const arrtoshort = [5,56,9,7,5,9,9,5,4,5,8,5,2,5,5,5]
+    // //Use inbuilt method
+    // const shortedarr = [...new Set(arrtoshort)].sort((a,b) => a-b)
+    // console.log(shortedarr);
 </script>
 </html>
